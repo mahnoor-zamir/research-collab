@@ -32,13 +32,13 @@ export function VerifiedPage() {
 				title="Hey you made it! 🎉"
 				subtitle="Let's get you up to speed"
 			>
-				<img
+				{/* <img
 					src={theme === "dark" ? cyclops9 : cyclops8}
 					alt="writality logo"
 					className="my-8 animate-pulse mx-auto"
 					width={200}
 					height={200}
-				/>
+				/> */}
 				<p className="text-center text-coolGrey-5 dark:text-coolGrey-6 text-xs">
 					We are just getting your onboarding ready for you. You will be
 					redirected shortly...

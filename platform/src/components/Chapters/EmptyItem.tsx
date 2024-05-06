@@ -13,7 +13,7 @@ export const EmptyItem: FC<{
     <div className="mx-auto flex overflow-y-auto">
       <div className=" m-auto flex flex-row flex-wrap items-center justify-center gap-5">
         <div className="my-auto">
-          <img src={circle4} alt="circle4" width={200} height={200} />
+          {/* <img src={circle4} alt="circle4" width={200} height={200} /> */}
         </div>
         <div>
           <h3 className="text-md mb-2 font-semibold "> {title} </h3>

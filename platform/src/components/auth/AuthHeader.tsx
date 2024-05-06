@@ -8,7 +8,7 @@ export const AuthHeader = () => {
 	return (
 		<nav className=" border-solid mb-auto mr-auto flex justify-between items-center w-full mt-4 px-2">
 			<div className="flex items-center gap-2">
-				<img
+				{/* <img
 					src={theme === "dark" ? cyclops7 : cyclops8}
 					alt="writality"
 					width={35}
@@ -17,7 +17,7 @@ export const AuthHeader = () => {
 				/>
 				<p className="font-bold text-md text-coolGrey-7 dark:text-coolGrey-4">
 					Writality
-				</p>
+				</p> */}
 			</div>
 			<div
 				className="ml-auto p-2 border-border  dark:border-borderDark border rounded-lg cursor-pointer"

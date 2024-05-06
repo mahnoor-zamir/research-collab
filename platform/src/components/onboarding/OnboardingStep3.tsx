@@ -19,8 +19,8 @@ export const OnboardingStep3: FC<{
 	return (
 		<section className="w-full flex flex-col grow">
 			<AuthTitle
-				title="Let's dig deeper"
-				subtitle="Tell us a litttttle more about yourself"
+				title="A few more steps to go!"
+				subtitle="Tell us more about yourself"
 			/>
 			<section
 				className="my-auto flex flex-col gap-4 max-w-lg grow"
@@ -62,7 +62,7 @@ export const OnboardingStep3: FC<{
 						data={preferenceList}
 						searchable
 						nothingFound="Nothing found"
-						limit={5}
+						// limit={5}
 					/>
 				)}
 				{user?.roles && user?.interests && (

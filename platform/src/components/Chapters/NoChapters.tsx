@@ -12,7 +12,7 @@ export const NoChapters: FC<{
 		<div className="flex items-center justify-center p-2 overflow-y-auto grow">
 			<div className=" flex items-center flex-col gap-5 m-auto flex-wrap mt-5">
 				<div className="my-auto">
-					<img src={circle4} alt="circle4" width={200} height={200} />
+					{/* <img src={circle4} alt="circle4" width={200} height={200} /> */}
 				</div>
 				<div>
 					<h3 className="text-md font-semibold mb-2 "> {title} </h3>

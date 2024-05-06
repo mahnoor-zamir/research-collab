@@ -1,6 +1,6 @@
 import { FC, useEffect } from "react";
 import { useThemeContext } from "../../Providers/ThemeProvider";
-import { cyclops8, cyclops9 } from "../../assets/icons";
+// import { cyclops8, cyclops9 } from "../../assets/icons";
 
 export const OnboardingStep4: FC<{
 	next: () => void;
@@ -19,13 +19,13 @@ export const OnboardingStep4: FC<{
 
 	return (
 		<section className="my-auto flex flex-col gap-4 mx-auto">
-			<img
+			{/* <img
 				src={theme === "dark" ? cyclops9 : cyclops8}
 				alt="writality logo"
 				className="my-8 animate-pulse mx-auto"
 				width={200}
 				height={200}
-			/>
+			/> */}
 			<p className="text-center text-coolGrey-5 dark:text-coolGrey-6 text-xs">
 				We are just getting your onboarding ready for you. You will be
 				redirected shortly...

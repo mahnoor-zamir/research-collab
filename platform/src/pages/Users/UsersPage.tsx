@@ -12,7 +12,7 @@ export const UsersPage = () => {
   return (
     <section className="overflow-y-auto rounded-lg bg-base dark:bg-baseDark">
       <BannerImage
-        image="https://images.unsplash.com/photo-1544604860-206456f08229"
+        image="/user-banner.jpg"
         alt="Post banner"
         styling="!object-center"
       />

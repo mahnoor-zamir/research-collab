@@ -27,7 +27,7 @@ export const SidebarTopNav = ({
   const collabs = "collaborations";
   const inbox = "inbox";
   const friends = "friends";
-  const writingGroup = "writing group";
+  // const writingGroup = "writing group";
 
   const [userChat, setUserChat] = useLocalStorage({
     key: "userChat",
@@ -50,13 +50,13 @@ export const SidebarTopNav = ({
             >
               <Icon3dCubeSphere size={18} />
             </SidebarTopNavItem>
-            <SidebarTopNavItem
+            {/* <SidebarTopNavItem
               sidebarNav={sidebarNav}
               value={writingGroup}
               navigate={() => setSidebarNav(writingGroup)}
             >
               <IconSocial size={18} />
-            </SidebarTopNavItem>
+            </SidebarTopNavItem> */}
             <Divider
               className="mx-2 !border-coolGrey-2 dark:!border-borderDark"
               orientation="vertical"

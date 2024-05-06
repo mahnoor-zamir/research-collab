@@ -2,7 +2,6 @@ import { Tabs, Text } from "@mantine/core";
 import { useUserProfileProjects } from "../hooks/projects/useUserProfileProjects";
 import { useCreateProject } from "../hooks/projects/useCreateProject";
 import { useAuthContext } from "../contexts/AuthContext";
-import { BannerImage } from "../components/BannerImage";
 import { Title } from "../components/Title";
 import { initials, initialsColor } from "../utils/userIcons";
 import { useNavigate } from "react-router-dom";
@@ -37,9 +36,10 @@ export const ProfilePage = () => {
   return (
     <div className="flex grow flex-row ">
       <div className="relative h-[calc(100dvh-3.4rem)] flex-grow place-items-center overflow-y-auto rounded-lg bg-base pr-2 dark:bg-baseDark">
-        <BannerImage
-          image="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Banner by Jez Timms on Unsplash"
+        <img
+          src="/profile-page-banner.jpg"
+          alt="Profile Banner"
+          className="w-full h-52 object-cover rounded-t-lg"
         />
         <div className="dark:border-baseBorder absolute left-16 top-[10.5rem] mx-auto flex h-28 w-28 items-center justify-center rounded-full border-[0.75rem] border-base bg-coolGrey-1/70 dark:border-baseDark dark:bg-borderDark/70">
           <div className={`truncate text-4xl font-bold  ${initialsColor(currentUser.name)} -mt-2`}>
@@ -53,10 +53,7 @@ export const ProfilePage = () => {
           </Title>
           <div className="flex max-w-3xl flex-col">
             <p className="-mt-4 text-sm text-coolGrey-4 dark:text-coolGrey-3">
-              "So here is why I write what I do: We all have futures. We all have pasts. We all have
-              stories. And we all, every single one of us, no matter who we are and no matter what’s
-              been taken from us or what poison we’ve internalized or how hard we’ve had to work to
-              expel it –– we all get to dream."
+              "Research is a journey of discovery, driven by curiosity and collaboration. It's the pursuit of knowledge, pushing boundaries and unlocking new possibilities. It's the heartbeat of innovation, guiding us towards a brighter future."
             </p>
             <div>
               <Text
@@ -64,7 +61,7 @@ export const ProfilePage = () => {
                 size="md"
                 className="float-right italic text-coolGrey-7 dark:text-pink-700"
               >
-                - N. K. Jemisin
+                - Rosalind Franklin
               </Text>
             </div>
           </div>
@@ -79,30 +76,18 @@ export const ProfilePage = () => {
                 className="!rounded-lg !border-none !p-[0.6rem] !px-3 font-semibold !text-coolGrey-6 transition-all duration-300 ease-in-out hover:!bg-coolGrey-7 hover:!text-coolGrey-1 data-[active]:!bg-coolGrey-7 data-[active]:!text-coolGrey-1 dark:!text-coolGrey-4 dark:hover:!bg-purple-800/50 dark:data-[active]:!bg-purple-800 dark:data-[active]:!text-coolGrey-1"
                 value="projects"
               >
-                Your Projects
+                Your Research Projects
               </Tabs.Tab>
-              {/* <Tabs.Tab
-                className="!rounded-lg !border-none !p-[0.6rem] !px-3 font-semibold !text-coolGrey-6 transition-all duration-300 ease-in-out hover:!bg-coolGrey-7 hover:!text-coolGrey-1 data-[active]:!bg-coolGrey-7 data-[active]:!text-coolGrey-1 dark:!text-coolGrey-4 dark:hover:!bg-purple-800/50 dark:data-[active]:!bg-purple-800 dark:data-[active]:!text-coolGrey-1"
-                value="posts"
-              >
-                Your Posts
-              </Tabs.Tab> */}
             </Tabs.List>
             <Tabs.Panel value="projects" ref={parent}>
               <div className="flex flex-col gap-2 rounded-lg py-2">
                 <ProfileProjects projects={projects} createProject={mutate} isLoading={isLoading} />
               </div>
             </Tabs.Panel>
-            {/* <Tabs.Panel value="posts" ref={parent}>
-              <div className="flex flex-col gap-2 rounded-lg py-2">
-                <ProfilePosts />
-              </div>
-            </Tabs.Panel> */}
           </Tabs>
         </div>
       </div>
       <div className="bg-coolGrey flex w-[20rem] flex-col gap-1 rounded-lg bg-coolGrey-1 px-2 dark:bg-baseDarker">
-        <Trophies currentUser={currentUser} />
         <DailyCount />
         <ProfileFriends user={currentUser} height="h-[16rem]" />
         <RecentNotifications />

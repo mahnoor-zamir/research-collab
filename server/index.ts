@@ -24,7 +24,7 @@ const server = http.createServer(app);
 mongoose.set("strictQuery", true);
 
 // configure dotenv
-dotenv.config();
+dotenv.config({ path: ".env.local" });
 
 // support parsing of application/json type post data
 app.use(express.json({ limit: "3mb" }));

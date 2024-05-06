@@ -41,7 +41,7 @@ export const SidebarNav = ({
               <Divider className="!border-gray-4 !my-2 dark:!border-borderDark" />
             </CategoryListItem>
             <CategoryListItem>
-              <CommunityListItem name="Posts" onClick={() => navigate("/posts")}>
+              {/* <CommunityListItem name="Posts" onClick={() => navigate("/posts")}>
                 <IconClipboard size={18} />
               </CommunityListItem>
               <CommunityListItem name="Writing-groups" onClick={() => navigate("/writing-groups")}>
@@ -49,7 +49,7 @@ export const SidebarNav = ({
               </CommunityListItem>
               <CommunityListItem name="Stories" onClick={() => navigate("/stories")}>
                 <IconBooks size={18} />
-              </CommunityListItem>
+              </CommunityListItem> */}
             </CategoryListItem>
             <CategoryListItem>
               <Divider className="!border-gray-4 !my-2 dark:!border-borderDark" />

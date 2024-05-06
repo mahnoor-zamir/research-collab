@@ -11,15 +11,14 @@ export const ProfileFriends = ({ user, height }: { user: IUser; height?: string 
   if (user?.friends?.length === 0) {
     return (
       <section className="flex h-56 w-full grow flex-col items-center justify-center gap-2 rounded-lg  p-4">
-        <p className="text-xs">No friends found 🫠</p>
+        <p className="text-xs">No friends found</p>
         <p className="text-center text-xs">
           {location.pathname === "/profile" ? (
             <>
-              You have no friends 😔. Your friends will appear here (hopefully soonish 🤞) and you
-              can chat with them.
+              You have no friends. Your friends will appear here and you can chat with them.
             </>
           ) : (
-            <>This user has no friends 😔. Their friends will appear here (hopefully soonish 🤞)</>
+            <>This user has no friends. Their friends will appear here.</>
           )}
         </p>
       </section>

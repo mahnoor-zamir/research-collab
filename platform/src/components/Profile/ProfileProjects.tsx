@@ -10,7 +10,6 @@ import { ListProjects } from "../Project/ListProjects";
 
 export const ProfileProjects: FC<{
   projects: IProject[];
-
   createProject: () => void;
   isLoading: boolean;
 }> = ({ projects, createProject, isLoading }) => {
@@ -24,7 +23,7 @@ export const ProfileProjects: FC<{
   if (isLoading) {
     return (
       <div>
-        <div className="mb-2 text-xs font-medium">Your Projects</div>
+        <div className="mb-2 text-xs font-medium">Your Research Projects</div>
         <div className="flex gap-2">
           {[...Array(5)].map((_, i) => (
             <Skeleton key={i} height={150} width={250} />
@@ -36,11 +35,11 @@ export const ProfileProjects: FC<{
 
   if (!projects || projects.length === 0) {
     return (
-      <div className="flex h-[calc(100dvh-39rem)] content-center items-center rounded-lg border border-border dark:border-borderDark">
+      <div className="flex flex-col items-left justify-left h-full">
         <EmptyItem
           title="Projects"
-          p1="You do not current have any projects. You may wish to work with other people or create your own project."
-          p2="Create your first project to get started"
+          p1="You do not currently have any ongoing research. You may wish to work with other people or start your own research project."
+          p2="Start your first research project to get started"
           createNewChapter={createProject}
         />
       </div>
@@ -48,10 +47,10 @@ export const ProfileProjects: FC<{
   }
 
   return (
-    <div className="">
-      <div className="text-md relative mb-2 flex items-center justify-between font-medium">
-        {/* Your Projects */}
-        <div className="absolute -top-12  right-0 ml-auto flex gap-1">
+    <div className="mt-8"> {/* Adjust the top margin as needed */}
+      <div className="text-md mb-2 flex items-center justify-between font-medium">
+        <div className="mr-auto">Your Research Projects</div>
+        <div className="flex gap-1">
           <button
             className={`rounded-lg border p-2 ${
               layout === "grid"

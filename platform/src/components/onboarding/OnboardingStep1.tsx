@@ -8,10 +8,9 @@ export const OnboardingStep1: FC<{
 }> = ({ next }) => {
 	return (
 		<section className="my-auto flex flex-col gap-4">
-			<Title className="mb-0">Welcome to Writality! 🙌</Title>
+			<Title className="mb-0">Welcome to Collaborative Research Platform! </Title>
 			<Text className="w-80 dark:text-coolGrey-5">
-				We are excited to have you here. But first, let's get you up to speed
-				with the basics.
+				We are excited to have you here. 
 			</Text>
 
 			<BlueButton className="mt-4 max-w-[100px]" onClick={next}>

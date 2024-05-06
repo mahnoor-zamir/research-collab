@@ -36,7 +36,7 @@ export const Sidebar: FC<{}> = () => {
   const collabs = "collaborations";
   const inbox = "inbox";
   const friends = "friends";
-  const writingGroup = "writing group";
+  // const writingGroup = "writing group";
 
   const { mutate: createProject } = useCreateProject();
   console.log(import.meta.env.VITE_API_WITH_FULL_FUNCTIONALITY);
@@ -90,7 +90,7 @@ export const Sidebar: FC<{}> = () => {
               <CategoryListItem className="mr-3 flex h-full w-full grow flex-col rounded-lg bg-base py-2 shadow dark:bg-baseDark">
                 <Link to="/" className="mb-2 self-center rounded-lg px-2 py-1">
                   <div className="mb-1 ml-2 mt-1 flex px-1.5">
-                    {theme === "dark" ? (
+                    {/* {theme === "dark" ? (
                       <img
                         src={cyclops7}
                         alt="writality"
@@ -106,8 +106,8 @@ export const Sidebar: FC<{}> = () => {
                         height={23}
                         className="inline-block"
                       />
-                    )}
-                    <div className="px-2 text-sm font-semibold">Writality</div>
+                    )} */}
+                    {/* <div className="px-2 text-sm font-semibold">Writality</div> */}
                   </div>
                 </Link>
                 <SidebarTopNav
@@ -142,7 +142,7 @@ export const Sidebar: FC<{}> = () => {
                         )}
                         {sidebarNav === bookmarks && <FavouriteTabItems />}
                         {sidebarNav === friends && <UserFriends chatId={userChat} />}
-                        {sidebarNav === writingGroup && <UserWritingGroups />}
+                        {/* {sidebarNav === writingGroup && <UserWritingGroups />} */}
                         {sidebarNav === inbox && (
                           <Notifications notification={currentUser?.inbox} />
                         )}

@@ -61,13 +61,13 @@ export const InviteUserModal: FC<{
 			styles={modalStyles(theme)}
 			scrollAreaComponent={Modal.NativeScrollArea}
 			onClose={close}
-			title="Invite users to collaborate with you 🤗"
+			title="Invite users to collaborate with you"
 		>
 			<p className="text-sm">
-				Adding collaborators to your story allows you to work with other people
+				Adding collaborators to your research allows you to work with other people
 				on the same story. You can add collaborators by entering their username
 				below. <br /> <br />
-				Collaborators will be able to edit the story, but they will not be able
+				Collaborators will be able to edit the research, but they will not be able
 				to delete it or add collaborators. If you want to remove a collaborator,
 				you can do so in the collaborators tab.
 			</p>

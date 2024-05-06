@@ -136,7 +136,7 @@ export const SingleUserPage: FC<{}> = () => {
       <section className="flex-w]rap mx-auto mt-2 flex max-w-screen-2xl px-6">
         <div className="flex w-80 flex-col gap-4 self-start">
           <div className="rounded-lg border border-border dark:border-none dark:bg-baseDarker">
-            <Trophies currentUser={user} isPublic height="h-[14rem]" />
+            {/* <Trophies currentUser={user} isPublic height="h-[14rem]" /> */}
           </div>
           <div className="flex flex-col gap-2 rounded-lg border border-border p-4 dark:border-none dark:bg-baseDarker">
             <h2 className="text-sm font-bold">Interests</h2>

@@ -64,14 +64,14 @@ export const MainFrame: FC<{
       title: "Profile",
       icon: <IconUserCircle stroke={2.2} size={16} />,
     },
-    {
-      title: "Stories",
-      icon: <IconBooks size={16} />,
-    },
-    {
-      title: "Posts",
-      icon: <IconTemplate size={16} />,
-    },
+    // {
+    //   title: "Stories",
+    //   icon: <IconBooks size={16} />,
+    // },
+    // {
+    //   title: "Posts",
+    //   icon: <IconTemplate size={16} />,
+    // },
     {
       title: "Settings",
       icon: <IconSettings size={16} />,
@@ -84,10 +84,10 @@ export const MainFrame: FC<{
       title: "Help",
       icon: <IconHelp size={16} />,
     },
-    {
-      title: "Writing-groups",
-      icon: <IconSocial size={16} />,
-    },
+    // {
+    //   title: "Writing-groups",
+    //   icon: <IconSocial size={16} />,
+    // },
   ];
 
   const closeTab = (

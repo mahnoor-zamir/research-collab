@@ -21,7 +21,7 @@ export const OnboardingStep2: FC<{
 		<section className="w-full flex flex-col grow">
 			<AuthTitle
 				title="Introduction"
-				subtitle="Tell us a little about yourself"
+				subtitle="Tell us about yourself"
 			/>
 			<section className="flex flex-col gap-4 max-w-lg grow" ref={parent}>
 				<Select

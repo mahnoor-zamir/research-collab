@@ -17,8 +17,7 @@ export const UserFriends: FC<{ chatId: string }> = ({ chatId }) => {
     return (
       <section className="grow" ref={parent}>
         <SmallText className="text-center" light>
-          You have no friends 😔. Your friends will appear here (hopefully soonish 🤞) and you can
-          chat with them.
+          You have no friends. Your friends will appear here and you can chat with them.
         </SmallText>
       </section>
     );
